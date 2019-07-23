@@ -84,12 +84,12 @@ void main()
 {
 	int i,j;
 	cout<<"请输入物品的数量:";
-     cin>>goods.m;
+        cin>>goods.m;
 
-    cout<<"请输入物品属性的个数:";
-         cin>>goods.n;
+        cout<<"请输入物品属性的个数:";
+        cin>>goods.n;
 	
-    cout<<"请输入每个物品的价值:";
+        cout<<"请输入每个物品的价值:";
 	for (i = 0; i < goods.m; i++)
 	{
 		   cin>>goods.p[i];
@@ -98,16 +98,16 @@ void main()
 	
 	
 	cout<<"请输入物品属性值:"<<endl;
-			for (i= 0; i < goods.n; i++)
-			for (j = 0; j < goods.m; j++)
-			{ cin>>goods.a[i][j];}	
+	for (i= 0; i < goods.n; i++)
+	for (j = 0; j < goods.m; j++)
+	{ cin>>goods.a[i][j];}	
 	
 	 cout<<"物品属性的约束值分别为:";
-	for (i = 0; i < goods.n; i++)
-		cin>>goods.con[i];		
-	    Backtrack(0);
+	 for (i = 0; i < goods.n; i++)
+	 cin>>goods.con[i];		
+	 Backtrack(0);
 
-		printf("最优价值为：%f\n", bestp);
+	 printf("最优价值为：%f\n", bestp);
 	
 
 }
